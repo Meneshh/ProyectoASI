@@ -1,0 +1,93 @@
+<div>
+  <div class="landing-page">
+    <div class='content-container'>
+      <div class='title-and-body'>
+        <p id='welcome'>
+          Bienvenido a 
+        </p>
+        <p id='title'>
+          Easy Food
+        </p>
+        <p id='description'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut lacinia ante, et scelerisque sapien. Phasellus eget mollis est. Nunc finibus ultrices nunc, vel facilisis lacus malesuada eget. Integer sapien est, laoreet malesuada nibh ut, dignissim imperdiet arcu. Donec nibh velit, facilisis ac varius eget, auctor at diam. Nullam id consequat felis, vel ultricies lacus. Quisque nisl nibh, ultricies sit
+        </p>
+      </div>
+      <div class='buttons'>
+        <app-signup></app-signup>
+        <app-login></app-login>
+        <button class="md-trigger" data-modal="modal-1" (click)="openSignupModal()">Registrate</button>
+        <button class="md-trigger" data-modal="modal-1" (click)="openLoginModal()">Ingresa</button>
+      </div>
+    </div>
+  </div>
+
+  <div class='functionality'>
+    <ul class="slides">
+      <input type="radio" name="radio-btn" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide">
+          <ul>
+            Agregar ingredientes
+            <li>- Agregue rápida y fácilmente cualquier ingrediente</li>
+            <li>- Los resultados de la búsqueda de recetas se filtran dinámicamente para obtener recetas </li>
+            <li>- Las recetas se ordenan según la cantidad de ingredientes faltantes</li>
+          </ul>
+     
+        </div>
+        <div class="nav">
+          <label for="img-3" class="prev">&#x2039;</label>
+          <label for="img-2" class="next">&#x203a;</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-2" />
+      <li class="slide-container">
+        <div class="slide">
+          <ul>Seleccionado recetas 
+            <li>- Cada receta contiene una lista de ingredientes, con imágenes e instrucciones paso a paso </li>
+            <li>- Las instrucciones de la receta son fáciles de seguir para cocineros de todos los niveles</li>
+            <li>- Las recetas se extraen de una colección de fuentes inspiradas en la comunidad </li>
+          </ul>
+        
+        </div>
+        <div class="nav">
+          <label for="img-1" class="prev">&#x2039;</label>
+          <label for="img-3" class="next">&#x203a;</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-3" />
+      <li class="slide-container">
+        <div class="slide">
+          <ul>Información adicional 
+            <li>- Cada receta tiene información nutricional con restricciones dietéticas  <</li>
+            <li>- Las opciones vegetarianas, veganas y otras opciones dietéticas se muestran y resaltan claramente </li>
+            <li>-  También se incluyen los valores porcentuales diarios de varias vitaminas / minerales que se encuentran en la receta.</li>
+          </ul>
+        
+        </div>
+        <div class="nav">
+          <label for="img-2" class="prev">&#x2039;</label>
+          <label for="img-1" class="next">&#x203a;</label>
+        </div>
+      </li>
+
+      <li class="nav-dots">
+        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      </li>
+    </ul>
+  </div>
+
+  <div class='technologies'>
+    <p class="p-1">Easy Food usa el  MEAN Stack para manejar las solicitudes del cliente servidor.</p>
+    <img src="https://i.imgur.com/n4fawQ7.png" alt="">
+    <p class="p-2"></p>
+  </div>
+
+  <div class='footer'>
+    
+  </div>
+
+</div>

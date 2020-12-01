@@ -1,0 +1,23 @@
+<div class="signup-modal md-effect-1" id="modal-1">
+	<div class="md-content">
+    <button class='close-button' (click)="closeModal()">X</button>
+		<button class='demo-login' (click)="demoLogin()"></button>
+
+    <p>Registrate</p>
+
+    <form class='signup-form' (submit)="handleSignup()">
+      <div class='signup-username-total'>
+        <label id='signup-username'>Usuario:</label>
+        <input id='signup-username-input' type="text" [(ngModel)]="username" name="username" />
+      </div>
+      <div class='signup-password-total'>
+        <label id='signup-password'>Contraseña:</label>
+        <input id='signup-password-input' type="password" [(ngModel)]="password" name="password" />
+      </div>
+      <input id='signup-button' type="submit" value="Registrate" />
+    </form>
+		<p id="signup-error">{{error}}</p>
+	</div>
+</div>
+
+<div class="md-overlay" (click)="closeModal()"></div>
